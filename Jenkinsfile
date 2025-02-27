@@ -54,14 +54,14 @@ pipeline {
   }
 }
 
-post {
-  always {
-    echo 'Always post block'
-  }
-  failure {
-    echo 'Job has been failed'
-  }
-}
+//post {
+//  always {
+ //   echo 'Always post block'
+//  }
+//  failure {
+//    echo 'Job has been failed'
+//  }
+//}
 
 //node {
   // groovy script
