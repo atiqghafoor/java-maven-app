@@ -63,6 +63,6 @@ post {
   }
 }
 
-node {
+//node {
   // groovy script
-}
+//}
