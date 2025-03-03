@@ -33,7 +33,7 @@ pipeline {
 
       steps {
         script {
-          gv.buildApp
+          gv.buildApp()
         }
         //echo 'Building the application...'
         //echo "building version ${NEW_VERSION}"
@@ -49,7 +49,7 @@ pipeline {
       }
       steps {
         script {
-          gv.testApp
+          gv.testApp()
         }
         //echo 'Testing the application...'
       }
@@ -59,7 +59,7 @@ pipeline {
       
       steps {
         script {
-          gv.deployApp
+          gv.deployApp()
         }
         //echo 'Deploying the application...'
         //echo "deploying version ${params.VERSION}"
