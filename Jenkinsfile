@@ -14,7 +14,13 @@ pipeline {
       }
     }
     stage("build jar") {
+      when {
+        expression {
+          BRANCH_NAME == 'own-starting-code'
+        }
+      }
       steps {
+        echo "Branch $BRANCH_NAME"
         script {
           gv.buildJar()
         }   
