@@ -16,7 +16,7 @@ pipeline {
     stage("build jar") {
       when {
         expression {
-          BRANCH_NAME == 'own-starting-code'
+          BRANCH_NAME == 'multibranch_test'
         }
       }
       steps {
