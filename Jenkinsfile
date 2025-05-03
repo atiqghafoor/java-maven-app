@@ -27,7 +27,9 @@ pipeline {
     stage("build image") {
       steps {
         script {
-          buildImage '137.202.47.31:8083/demo-app:jma-5.0'
+          buildImage '137.202.47.31:8083/demo-app:jma-6.0'
+          dockerLogin()
+          dockerPush '137.202.47.31:8083/demo-app:jma-6.0'
         }
       }       
     }
