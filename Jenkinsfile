@@ -11,6 +11,7 @@ pipeline {
         script {
           gv = load "script.groovy"
         }
+        echo "groovy script uploaded sucessfully"
       }
     }
     stage("build jar") {
