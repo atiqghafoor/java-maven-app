@@ -20,7 +20,7 @@ pipeline {
           //sh 'docker build -t 137.202.47.31:8083/jma_jenkinsfile:1.3 .'  
           //sh 'echo $PASS | docker login -u $USER --password-stdin 137.202.47.31:8083'
           //sh 'docker push 137.202.47.31:8083/jma_jenkinsfile:1.3'
-          }
+          //}
         }       
       }      
     }
