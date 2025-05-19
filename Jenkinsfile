@@ -17,8 +17,8 @@ pipeline {
       steps {
         echo 'Atiq Branch $BRANCH_NAME'
         script {
-          sh 'mvn package'
-          //gv.buildJar()
+          //sh 'mvn package'
+          gv.buildJar()
         }   
       }      
     }
