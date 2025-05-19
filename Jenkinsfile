@@ -15,7 +15,7 @@ pipeline {
     }
     stage("build jar") {
       steps {
-        //echo "Atiq Branch $BRANCH_NAME"
+        echo 'Atiq Branch $BRANCH_NAME'
         script {
           sh 'mvn package'
           //gv.buildJar()
